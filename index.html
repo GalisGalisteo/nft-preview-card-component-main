@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | NFT preview card component</title>
 
 </head>
+
 <body>
 
-  Equilibrium #3429
+  <div class="card">
+    <img class="card__image" src="./images/image-equilibrium.jpg" alt="crystal cube multicolor">
+    <div class="card__info">
+      <h1 class="card__title">Equilibrium #3429</h1>
+      <p class="card__description">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="card__selling-details">
+        <div class="selling-details__price"> <img src="./images/icon-ethereum.svg" alt="ethereum logo"> 0.041 ETH</div>
+        <div class="selling-details__days-left"> <img src="./images/icon-clock.svg" alt="clock icon"> 3 days left</div>
+      </div>
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+      <div class="card__creator">
+        <img class="creator__image" src="./images/image-avatar.png" alt="profile picture">Creation of <span>Jules Wyvern</span>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
