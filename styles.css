@@ -2,12 +2,88 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 18px;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     background-color: hsl(216, 50%, 16%);
-    
+    padding: 1.5rem;
+    border-radius: 15px;
+    max-width: 20rem;
+    }
+
+
+.card__image {
+    width: 100%;
+    border-radius: 8px;
 }
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.card__title, .creator__name > span {
+    color: white;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.2rem 0;
+
+}
+
+
+.card__description {
+    line-height: 1.6rem;
+    margin:0.2rem;
+}
+
+.card__selling-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selling-details__price {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.selling-details__days-left {
+    font-weight: 400;
+}
+
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+    width: 100%;
+    
+
+}
+
+.card__creator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.creator__image {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.creator__name > span {
+    font-weight: 300;
+}    
